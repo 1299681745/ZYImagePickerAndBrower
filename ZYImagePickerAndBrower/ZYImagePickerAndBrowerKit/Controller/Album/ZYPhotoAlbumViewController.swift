@@ -307,7 +307,7 @@ class ZYPhotoAlbumViewController: ZYBaseViewController, PHPhotoLibraryChangeObse
         // 缩略图的压缩模式设置为无
         imageRequestOption.resizeMode = .none
         // 缩略图的质量为快速
-        imageRequestOption.deliveryMode = .fastFormat
+//        imageRequestOption.deliveryMode = .fastFormat
         // 按照PHImageRequestOptions指定的规则取出图片
         imageManager.requestImage(for: asset, targetSize: CGSize.init(width: 140, height: 140), contentMode: .aspectFill, options: imageRequestOption, resultHandler: {
             (result, _) -> Void in
